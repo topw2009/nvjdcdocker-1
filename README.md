@@ -3,11 +3,11 @@
 
 ## 注意 注意注意
 
-    本项目只备份 nolanjdc docker  ,  未植入任何代码
+    本项目只备份 nolanjdc 1.5 极速版 （arm 不支持） ,  未植入任何代码
     
 ## 提示
 
-由于我自己的环境是centos x86，arm不支持
+由于我自己的环境是 centos x86，arm 不支持
 
 这是打包过的 不要fork
 
