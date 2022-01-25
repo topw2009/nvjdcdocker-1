@@ -2,9 +2,9 @@
 
 
 ## 注意 注意注意
-    HUBdcoker里面有一个 nolanjdc/nvjdc 镜像不要拉 我看还有500多人拉了 起名都有所图 别的我不多说了把
 
-    我自己的docker  nolanhzy/nvjdc 认清楚
+    本项目只备份 nolanjdc docker  ,  未植入任何代码
+    
 ## 提示
 
 由于我自己的环境是centos x86，arm不支持
@@ -21,17 +21,17 @@
 1拉源码
 国内
 ```
-git clone https://ghproxy.com/https://github.com/NolanHzy/nvjdcdocker.git /root/nolanjdc
+git clone https://ghproxy.com/https://github.com/topw2009/nvjdcdocker-1.git /root/nolanjdc
 ```
 国外
 ```
-git clone https://github.com/NolanHzy/nvjdcdocker.git /root/nolanjdc
+git clone https://github.com/topw2009/nvjdcdocker-1.git /root/nolanjdc
 ```
 
 
 2 拉取基础镜像以后不需要拉取镜像了 如果需要拉取我会通知
 ```
-sudo docker pull nolanhzy/nvjdc:latest
+sudo docker pull lpssxs/nvjdc:amd
 ```
 
 3 执行命令
@@ -89,9 +89,9 @@ cd  /root/nolanjdc
 10启动镜像
 
 ```
-sudo docker run   --name nolanjdc -p 5701:80 -d  -v  "$(pwd)":/app \
+sudo docker run   --name nolanjdc -p 9701:80 -d  -v  "$(pwd)":/app \
 -v /etc/localtime:/etc/localtime:ro \
--it --privileged=true  nolanhzy/nvjdc:latest
+-it --privileged=true  lpssxs/nvjdc:amd
 ```
 
 11查看 日志 
@@ -119,11 +119,11 @@ mv /root/nolanjdc /root/nolanjdcdb
 然后执行步骤一 拉取代码
 国内
 ```
-git clone https://ghproxy.com/https://github.com/NolanHzy/nvjdcdocker.git /root/nolanjdc
+git clone https://ghproxy.com/https://github.com/topw2009/nvjdcdocker-1.git /root/nolanjdc
 ```
 国外
 ```
-git clone https://github.com/NolanHzy/nvjdcdocker.git /root/nolanjdc
+git clone https://github.com/topw2009/nvjdcdocker-1.git /root/nolanjdc
 ```
 
 
